@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send Email</title>
+    <link rel="icon" type="image/x-icon" href="Gmail.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+    <!-- <script src="Script.js" type="text/javascript"></script> -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link href="Styles.css" rel="stylesheet" />
+</head>
+
+
+<body>
+
+    <div id="D1">
+        <h1>Send Email</Index.html></h1>
+    </div>
+
+
+    <form method="post">
+        <input type="button" value="Send Email" onclick="sendMail()"/>
+    </form>
+
+    <script>
+        function sendMail() {
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "gbikes.customer.service@gmail.com",
+                Password : "DaronetDaronet",
+                To : 'Goralkin@gmail.com',
+                From : "gbikes.customer.service@gmail.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+              message => alert(message)
+            );
+        }
+    </script>
+
+
+    <div>
+        <p id="P2">X</p>
+    </div>
+    
+
+</body>
+</html>
