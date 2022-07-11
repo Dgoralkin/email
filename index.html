@@ -27,13 +27,13 @@
         function sendMail() {
             Email.send({
                 SecureToken : "5351027b-fe2d-49d4-ad43-29b37dde54b0",
-                Host : "smtp.gmail.com",
+                Host : "smtp.elasticemail.com",
                 Username : "gbikes.customer.service@gmail.com",
-                Password : "DaronetDaronet",
+                Password : "D360E0BFB939E840E5D18DB2BF786E980F77",
                 To : 'Goralkin@gmail.com',
                 From : "gbikes.customer.service@gmail.com",
-                Subject : "This is the subject",
-                Body : "And this is the body"
+                Subject : "We are just testing the mailbox",
+                Body : "Hello dear user. We are just testing the mailbox"
             }).then(
               message => alert(message)
             );
